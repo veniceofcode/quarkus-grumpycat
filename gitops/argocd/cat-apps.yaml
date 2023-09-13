@@ -12,8 +12,8 @@ spec:
   project: default
   source:
     path: config/overlays/dev
-    repoURL: https://github.com/wpernath/grumpycat-config.git
-    targetRevision: opentlc
+    repoURL: https://github.com/veniceofcode/grumpycat-config.git
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
@@ -34,8 +34,8 @@ spec:
   project: default
   source:
     path: config/overlays/stage
-    repoURL: https://github.com/wpernath/grumpycat-config.git
-    targetRevision: opentlc
+    repoURL: https://github.com/veniceofcode/grumpycat-config.git
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true
@@ -49,17 +49,3 @@ metadata:
   namespace: cat-ci
   finalizers:
     - resources-finalizer.argocd.argoproj.io
-spec:
-  destination:
-    namespace: cat-prod
-    server: https://kubernetes.default.svc
-  project: default
-  source:
-    path: config/overlays/prod
-    repoURL: https://github.com/wpernath/grumpycat-config.git
-    targetRevision: opentlc
-  syncPolicy:
-    automated:
-      prune: true
-    syncOptions:
-    - PruneLast=true
