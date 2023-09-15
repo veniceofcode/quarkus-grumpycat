@@ -123,7 +123,7 @@ Please have a look [here](./kubernetes-config/README.md)
 ### Using full featured GitOps
 To make use of all GitOps features, have a look at the documentation inside the [gitops](./gitops/README.md) folder of this project. 
 
-
+## To Do
 
 ## Roadmap
 
