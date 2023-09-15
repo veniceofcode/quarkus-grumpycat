@@ -131,7 +131,7 @@ To make use of all GitOps features, have a look at the documentation inside the 
 - Implement an Infispan service to make cat-multiplayer more scalable
 - Make cat-multiplayer reactive to keep up with several concurrent sessions
 
-## To do 
+
 
 ## About the graphics
 The map graphics are coming from [LPC Terrain](https://opengameart.org/content/tiled-terrains) and all its authors. Special thanks to all of them!
